@@ -1,14 +1,16 @@
---create database AstronomicalObservatory
---drop table Meteor
---drop table SpaceDust
---drop table StarConstellation
---drop table Constellation
---drop table Star
---drop table Satellite
---drop table Planet
---drop table SolarSystem
---drop table Galaxy
---drop table BlackHoles
+USE AstronomicalObservatory
+GO
+
+drop table Meteor
+drop table SpaceDust
+drop table StarConstellation
+drop table Constellation
+drop table Star
+drop table Satellite
+drop table Planet
+drop table SolarSystem
+drop table Galaxy
+drop table BlackHoles
 
 
 CREATE TABLE BlackHoles
