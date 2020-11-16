@@ -11,7 +11,7 @@ FROM (
          SELECT S.Name, S.Size
          FROM Satellite S
          WHERE S.Size IS NOT NULL
-     ) as SatellitesAndSpaceStations
+     )
 ORDER BY Size
 
 -- Number of planets with at least one satellite with size greater than 20
