@@ -155,8 +155,10 @@ CREATE TABLE ProcedureTable
     RedoProcedure VARCHAR(100),
     Version       INT PRIMARY KEY
 )
-
-
+SELECT * FROM ProcedureTable
+SELECT * FROM VersionHistory
+SELECT * FROM AlienShip
+EXEC GoToVersion 0
 CREATE PROCEDURE GoToVersion @Version INT
 AS
 DECLARE @var INT;
@@ -256,7 +258,7 @@ FROM ProcedureTable
 SELECT *
 FROM VersionHistory
 
-EXECUTE GoToVersion @Version = 2
+EXECUTE GoToVersion @Version = 1
 
 
 
